@@ -30,3 +30,13 @@ person = {
 person.sayHello();
 console.log(person.name + ' ' + person.lastname + ' => ' + typeof person);
 
+// function
+test = function(){
+    return 'Hello!';
+}
+
+console.log(test + ' => ' + typeof test);
+
+// boolean
+test = true;
+console.log(test + ' => ' + typeof test);
