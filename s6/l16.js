@@ -3,3 +3,9 @@
 
 // null è di tipo object e non primitivo
 console.log(typeof(null));
+
+// window: oggetto implementato nel browser non in Node.js
+// undefined è una variabile globale, nei browser posso richiamarla come window.undefined
+var nome;
+console.log(nome);
+console.log(typeof(nome));
