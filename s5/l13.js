@@ -17,6 +17,11 @@ console.log(binNum);
 var res = hexNum * 'string';
 console.log(res);
 
-var readLine = require('readline-sync');
-var num = readLine.question('Inserisci un numero: ');
-console.log('Hai inserito: ' + num);
+if ( !isNaN(res) ) {
+    console.log('Il risultato è: ' + res);
+} else {
+    console.log('Attenzione: il risultato non è un numero!');
+}
+
+// verifica se NaN attraverso il metodo completo
+console.log( Number.isNaN(res) );
