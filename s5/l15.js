@@ -24,3 +24,9 @@ console.log(wrapInt);
 
 wrapInt = (2).toFixed(2);
 console.log(wrapInt);
+
+// costanti 
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(2/0);
+console.log(typeof(Infinity));
