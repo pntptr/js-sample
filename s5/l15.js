@@ -1,4 +1,4 @@
-// SEZIONE 5, LEZIONE 13 - CORSO UDEMY JS
+// SEZIONE 5, LEZIONE 15 - CORSO UDEMY JS
 // oggetto number
 
 var num = new Number("2");
