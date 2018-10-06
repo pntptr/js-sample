@@ -9,3 +9,7 @@ console.log(typeof(null));
 var nome;
 console.log(nome);
 console.log(typeof(nome));
+
+// null e undefined non sono dello stesso tipo
+console.log(null == undefined); // true
+console.log(null === undefined); // false
