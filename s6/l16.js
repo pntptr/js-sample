@@ -13,3 +13,6 @@ console.log(typeof(nome));
 // null e undefined non sono dello stesso tipo
 console.log(null == undefined); // true
 console.log(null === undefined); // false
+
+if(nome) console.log(nome); // la variabile è dichiarata ma non è definita (non ha valore)
+if(cognome) console.log(cognome); // errore: la variabile non è stata nemmeno definita!

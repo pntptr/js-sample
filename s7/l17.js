@@ -1,0 +1,2 @@
+// SEZIONE 7, LEZIONE 17 - CORSO UDEMY JS
+// tipo boolean
