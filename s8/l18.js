@@ -9,3 +9,10 @@ console.log(giorni);
 // Javascript effettua un fill delle posizioni rimanenti con undefined: l'array cresce!
 giorni[10] = "Test";
 console.log(giorni);
+
+giorni = new Array('');
+console.log(giorni);
+giorni = new Array(2,3);
+console.log(giorni);
+giorni[2] = 4;
+console.log(giorni);
