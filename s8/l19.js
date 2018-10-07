@@ -2,6 +2,7 @@
 // array - literals
 
 var days = [];
+days = [7];
 console.log(days);
 
 // prestare attenzione all'override dei metodi in Javascript
