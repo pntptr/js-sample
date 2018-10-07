@@ -3,6 +3,7 @@
 
 var days = [];
 days = [7];
+days = [42, 'Prova', false, [1, 2, 3, 4, 5]];
 console.log(days);
 
 // prestare attenzione all'override dei metodi in Javascript
@@ -16,3 +17,5 @@ function Array(){
 var giorni = new Array();
 console.log(giorni.length);
 console.log(days.length);
+console.log(days[1]);
+console.log(days[3][2]);
