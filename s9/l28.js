@@ -33,3 +33,6 @@ console.log(vero != falso);
 
 console.log(vero != 1);
 console.log(vero !== 1);
+
+console.log(falso != 0);
+console.log(falso !== 0);
