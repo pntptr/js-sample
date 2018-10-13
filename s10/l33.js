@@ -25,6 +25,7 @@ if(valore){
 switch(valore){
     case valore:{
         // do something...
+        break;
     }
     default:{
         // do something...
