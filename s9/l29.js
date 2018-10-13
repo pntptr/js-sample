@@ -13,5 +13,7 @@ console.log('' === 0);
 // confronto con undefined
 var numero;
 console.log(numero);
-console.log(numero == undefined);
-console.log(numero === undefined);
+console.log(numero == undefined); // true
+console.log(numero === undefined); // true: stesso tipo
+console.log(numero == null); // true: il valore non esiste
+console.log(numero === null); // false
