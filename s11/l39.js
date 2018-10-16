@@ -1,4 +1,4 @@
-// SEZIONE 10, LEZIONE 39 - CORSO UDEMY JS
+// SEZIONE 11, LEZIONE 39 - CORSO UDEMY JS
 // ciclo for
 var maxLoop = 10;
 

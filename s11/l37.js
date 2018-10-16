@@ -1,4 +1,4 @@
-// SEZIONE 10, LEZIONE 37 - CORSO UDEMY JS
+// SEZIONE 11, LEZIONE 37 - CORSO UDEMY JS
 // introduzione ai cicli in Javascript
 
 var maxNum = 10;
