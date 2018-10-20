@@ -1,4 +1,4 @@
-// SEZIONE 12, LEZIONE 41 - CORSO UDEMY JS
+// SEZIONE 12, LEZIONE 42 - CORSO UDEMY JS
 // introduzione alle funzioni in Javascript
 
 function test(){
