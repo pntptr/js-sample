@@ -1,6 +1,6 @@
-// SEZIONE 14, LEZIONE 60 - CORSO UDEMY JS
+// SEZIONE 14, LEZIONE 61 - CORSO UDEMY JS
 // METODI DELL'OGGETTO ARRAY IN JAVASCRIPT
-// Il metodo toString(): convertire un array a una stringa
+// Il metodo slice(): prelevare una fetta di una stringa
 
 // CREATE AN ARRAY
 var days = [
@@ -19,4 +19,9 @@ var result;
 result = days.toString();
 
 // SHOW THE RESULT
-console.log(days);
+console.log(result);
+
+// SLICE METHOD: RETURNS A SLICE OF AN ARRAY
+var arraySliced = days.slice(0,2);
+
+console.log(arraySliced.toString());
