@@ -25,3 +25,8 @@ console.log(result);
 var arraySliced = days.slice(0,2);
 
 console.log(arraySliced.toString());
+
+// SLICE METHOD TO RETURN A COPY OF AN ARRAY
+var copyOfArray = days.slice();
+copyOfArray[7] = 'PLUTONDAY';
+console.log(copyOfArray.toString());
