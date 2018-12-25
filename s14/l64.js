@@ -1,6 +1,6 @@
 // SEZIONE 14, LEZIONE 64 - CORSO UDEMY JS
 // METODI DELL'OGGETTO ARRAY IN JAVASCRIPT
-// Il metodo splice
+// Il metodo splice: rimuove elementi e ne aggiunge di nuovi da un array
 
 // CREATE AN ARRAY
 var days = [
