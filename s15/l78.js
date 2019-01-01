@@ -17,3 +17,8 @@ var jsonString = '{"name" : "Tiziana","surname" : "Panetta","role" : "Sorellazza
 var myJsonObj = JSON.parse(jsonString);
 
 console.log(myJsonObj);
+console.log(myJsonObj.surname);
+
+var newJson = '';
+
+// ...
