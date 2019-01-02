@@ -17,7 +17,6 @@ var jsonString = '{"name" : "Tiziana","surname" : "Panetta","role" : "Sorellazza
 var myJsonObj = JSON.parse(jsonString);
 
 console.log(myJsonObj);
-<<<<<<< HEAD
 
 // CREATE A JSON OBJECT WITH NUMBER, STRING, NULL, OBJECT, ARRAY, TRUE AND FALSE
 var newJson = '{"isMarried" : false, "husband" : null, "phone" : {"brand":"iPhone", "model":"6"}}';
@@ -25,10 +24,3 @@ console.log(JSON.parse(newJson));
 var objJson = JSON.parse(newJson);
 console.log(objJson.isMarried);
 console.log(objJson.phone.brand);
-=======
-console.log(myJsonObj.surname);
-
-var newJson = '';
-
-// ...
->>>>>>> bc260f64624df045c1b8b1f74e1cefc9bb746e9a
