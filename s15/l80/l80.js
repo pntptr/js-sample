@@ -8,6 +8,12 @@ var xhr = new XMLHttpRequest();
 // CREATE A PARAMS VARIABLE
 var params = 'name=Daniele&age=28';
 
+// CREATE A JSON OBJ PARAMS
+var paramsJson = {
+    name : 'Daniele',
+    age : 29
+}
+
 // MAKE A GET REQUEST (ASYNC)
 xhr.open('GET', "json.php?" + params, true);
 
