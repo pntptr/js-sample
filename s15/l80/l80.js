@@ -5,9 +5,6 @@
 // CREATE A NEW OBJECT TO MAKE A REQUEST
 var xhr = new XMLHttpRequest();
 
-// CREATE A PARAMS VARIABLE
-var params = 'name=Daniele&age=28';
-
 // CREATE A JSON OBJ PARAMS
 var paramsJson = {
     name : 'Daniele',
@@ -15,7 +12,7 @@ var paramsJson = {
 }
 
 // MAKE A GET REQUEST (ASYNC)
-xhr.open('GET', "json.php?" + params, true);
+xhr.open('GET', "json.php?json=" + JSON.stringify(paramsJson), true);
 
 // SEND THE DATA TO A SERVER
 xhr.send();

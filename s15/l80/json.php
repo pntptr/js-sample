@@ -1,6 +1,11 @@
 <?php
-    // PHP PAGE TO CREATE A JSON FILE
 
+    // RETURNS A JSON OBJECT VIA PHP
+    $jsonString = json_decode($_GET['json']);
+    echo json_encode($jsonString);
+    die();
+
+    // PHP PAGE TO CREATE A JSON FILE
     $name = $_GET['name'];
     $age = $_GET['age'];
 
