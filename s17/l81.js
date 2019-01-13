@@ -1,0 +1,3 @@
+// SEZIONE 17, LEZIONE 81 - CORSO UDEMY JS
+// JAVASCRIPT LATO CLIENT: MANIPOLARE IL DOM
+// Introduzione al DOM (document object model)
