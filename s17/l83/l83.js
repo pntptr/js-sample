@@ -16,8 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
     h1.addEventListener('mouseover', function () {
         h1.style.color = 'red';
     });
-    
+
     h1.addEventListener('mouseleave', function () {
         h1.style.color = 'green';
     });
+
+    // select an element by class name
+    var rows = document.getElementsByClassName('row');
+    for(var i = 0; i < rows.length; i++){
+        rows[i].style.border = "1px solid black";
+    }
 });
