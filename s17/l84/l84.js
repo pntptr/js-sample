@@ -3,6 +3,6 @@
 // querySelector, querySelectorAll
 
 document.addEventListener('DOMContentLoaded', function(){
-    var h1 = document.querySelector('#title');
+    var h1 = document.querySelector('#title'); // querySelector() returns only one element
     h1.style.color = "green";
 });
