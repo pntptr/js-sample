@@ -5,23 +5,23 @@
 var menu = [
     {
         url: 'http://www.google.it',
-        title: 'Google - Home Page'
+        title: 'Google'
     },
     {
-        url: 'http://www.google.it',
-        title: 'Google - Home Page'
+        url: 'http://www.microsoft.it',
+        title: 'Microsoft'
     },
     {
-        url: 'http://www.google.it',
-        title: 'Google - Home Page'
+        url: 'http://www.polimi.it',
+        title: 'Politecnico di Milano'
     },
     {
-        url: 'http://www.google.it',
-        title: 'Google - Home Page'
+        url: 'http://www.corriere.it',
+        title: 'Corriere della Sera'
     },
     {
-        url: 'http://www.google.it',
-        title: 'Google - Home Page'
+        url: 'http://www.amazon.it',
+        title: 'Amazon'
     }
 ];
 
