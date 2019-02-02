@@ -3,12 +3,15 @@
 // parentNode and firstChild
 
 document.addEventListener('DOMContentLoaded', function(){
-    var h1 = document.querySelector('#title'); // querySelector() returns only one element
-    h1.style.color = "green";
+    var doc = document;
+    var container = doc.querySelector('#idContainer');
+    console.log(container);
 
-    // usage of querySelectorAll()
-    var p = document.querySelectorAll('p');
-    p.forEach((target) => {
-        target.style.color = "purple";
-    });
+    // how to access to parent node element
+    container.parentNode.style.background = '#c0c0c0';
+    //alert(container.children[0].children.length);
+
+    console.log(container.firstChild);
+    console.log(container.firstElementChild);
+
 });
