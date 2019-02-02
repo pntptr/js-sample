@@ -1,6 +1,6 @@
-// SEZIONE 17, LEZIONE 85 - CORSO UDEMY JS
+// SEZIONE 17, LEZIONE 86 - CORSO UDEMY JS
 // JAVASCRIPT LATO CLIENT: MANIPOLARE IL DOM
-// querySelectorAll
+// parentNode and firstChild
 
 document.addEventListener('DOMContentLoaded', function(){
     var h1 = document.querySelector('#title'); // querySelector() returns only one element
