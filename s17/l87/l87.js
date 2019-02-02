@@ -27,5 +27,24 @@ var menu = [
 
 // execute callback when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function(){
-    
+    var doc, ul, li, a, i, text;
+    doc = document;
+
+    ul = doc.createElement('ul');
+    ul.setAttribute('class', 'list-group');
+
+    menu.forEach((ele) => {
+        li = doc.createElement('li');
+        li.setAttribute('class', 'list-group-item');
+        a = doc.createElement('a');
+        a.href = ele.url;
+        a.setAttribute('title', ele.title);
+        text = doc.createTextNode(ele.title);
+
+        a.appendChild(text);
+        li.appendChild(a);
+        ul.appendChild(li);
+    });
+
+    doc.body.querySelector('#idContainer').appendChild(ul);
 });
