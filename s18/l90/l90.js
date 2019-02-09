@@ -27,9 +27,17 @@ document.addEventListener('DOMContentLoaded', function(){
     };
     */
 
+    var funcForm = function(evt) {
+        // here the code ...
+    }
+
+    /*
     f.addEventListener('submit', (e) => {
         // here the code ...
     });
-
+    */
+   
+    f.addEventListener('submit', funcForm);
+    f.removeEventListener('submit', funcForm);
 
 });
