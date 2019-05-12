@@ -2,30 +2,39 @@
 // JAVASCRIPT ES6: PROMISE
 // Javascript ES6: Ajax con Promise
 
-// In this lesson I used a standard AJAX request provides by XMLHttpRequest object
-window.onload = function() {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:3000/index.php');
-    xhr.send();
-    
-    // if the response is OK (200)
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState === 4 && xhr.status === 200){
-            let obj = JSON.parse(xhr.responseText);
+// Handle AJAX request with Promise
+// Create an object to handle request
+let $ = {
+    get : (url) => {
+        let p = new Promise((resolve, reject) => {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.send();
             
-            // STEP.1 - print on console the result to verify if it works
-            console.log(obj);
-            // STEP.2 - create an unordered items list to show result in HTML page
-            let bookList = '<ul>';
-            bookList += obj.map((book) => '<li>' + book.title + '</li>');
-            bookList += '</ul>';
-            document.querySelector('#container').innerHTML = bookList;
-        }
-    };
+            // if the response is OK (200)
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4){
+                    if(xhr.status === 200){
+                        resolve(xhr.responseText);
+                    } else {
+                        reject('Error contacting server...');
+                    }
+                }
+            };
+            // in case of error/errors
+            xhr.error = function(){
+                reject('Error contacting server...');
+            };
+        }); // end promise
 
-    // in case of error/errors
-    xhr.error = function(){
-        alert('Something wrong happens...');
-    };
-    
+        return p;
+    } // end of get method
+}
+
+window.onload = () => {
+    $.get('http://localhost:8000/index.php').then((res) => {
+        // if it is OK
+        let obj = JSON.parse(res);
+        console.log(obj);
+    }).catch((err) => {console.log(err)});
 };
