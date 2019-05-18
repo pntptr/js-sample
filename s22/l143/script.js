@@ -13,10 +13,21 @@
 
 const JSONPLACEHOLDER = 'https://jsonplaceholder.typicode.com/posts';
 
+// SOLUTION 1: execute single then() for each promise
+//let post$ = fetch(JSONPLACEHOLDER + '/1')
+    //.then(resp => resp.json());
+//post$.then( post => console.log(post));
+//
+//let comment$ = fetch(JSONPLACEHOLDER + '/1/comments')
+    //.then(resp => resp.json());
+//comment$.then( comments => console.log(comments));
+
 let post$ = fetch(JSONPLACEHOLDER + '/1')
     .then(resp => resp.json());
-post$.then( post => console.log(post));
 
 let comment$ = fetch(JSONPLACEHOLDER + '/1/comments')
     .then(resp => resp.json());
-comment$.then( comments => console.log(comments));
+Promise.all([post$, comment$])
+    .then( resp => {
+        console.log(resp);
+    });
