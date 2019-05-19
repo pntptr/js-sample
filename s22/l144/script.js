@@ -31,4 +31,7 @@ Promise.all([post$, comment$])
             li.innerHTML = comment.body;
             ul.appendChild(li);
         });
+    })
+    .catch(error => {
+        console.log(error);
     });
