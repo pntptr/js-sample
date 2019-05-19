@@ -1,0 +1,5 @@
+// SEZIONE 23, LEZIONE 145 - CORSO UDEMY JS
+// JAVASCRIPT ES6: ASYNC-AWAIT
+// Javascript ES6. Funzioni async
+
+
