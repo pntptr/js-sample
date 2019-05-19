@@ -23,4 +23,12 @@ Promise.all([post$, comment$])
         let post = resp[0];
         document.querySelector("#idPostTitle").innerHTML = post.title;
         document.querySelector("#idPostBody").innerHTML = post.body;
+        let comments = resp[1];
+        let ul = document.querySelector('#idResultList');
+        comments.forEach(comment => {
+            let li = document.createElement('li');
+            li.className = 'list-group-item';
+            li.innerHTML = comment.body;
+            ul.appendChild(li);
+        });
     });
